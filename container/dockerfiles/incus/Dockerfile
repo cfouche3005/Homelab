@@ -44,7 +44,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 # Install incus
 RUN apt-get update && apt-get install --no-install-recommends -y \
-    incus \
+    incus-extra \
     incus-ui-canonical \
     && apt autoremove -y \
     && apt-get clean
