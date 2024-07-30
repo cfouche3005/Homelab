@@ -41,4 +41,6 @@ mkdir -p /var/lib/incus-lxcfs
 /usr/lib/systemd/systemd-udevd &
 UDEVD_PID=$!
 /opt/incus/bin/incusd &
+/usr/bin/ovn-controller &
+/usr/bin/ovs-vswitchd &
 sleep infinity
